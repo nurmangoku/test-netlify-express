@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/api.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.10",
+    "netlify-lambda": "^2.0.2",
+    "serverless-http": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
+  },
+  "author": "",
+  "license": "ISC"
+}
