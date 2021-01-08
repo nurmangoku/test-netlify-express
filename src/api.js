@@ -41,6 +41,8 @@ router.post("/", async (req,res)=>{
     }
 })
 
+app.use(`/.netlify/functions/app`, router)
+
 // app.listen(3000,()=> console.log("server run"))
 
 module.exports = app
