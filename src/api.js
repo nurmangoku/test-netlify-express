@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require("mongoose")
 const Schema = require("./schema/schema.js")
 const serverless = require("serverless-http")
+const cors = require("cors")
 
 const router = express.Router()
 
@@ -17,6 +18,7 @@ const runDb = async ()=>{
 }
 
 app.use(express.json())
+app.use(cors())
 runDb().then(()=>console.log("database ok"))
 
 router.get("/",async (req,res)=>{
